@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id='c1' width="200" height="200"></canvas>
+    <canvas id='c2' width="200" height="200"></canvas>
+    <script>
+        const c1=document.getElementById('c1');
+        const ctx1=c1.getContext('2d');
+        ctx1.fillStyle='#FF0000';
+        ctx1.fillRect(0,0,150,75);
+
+        ctx1.fillStyle='#00FF00';
+        ctx1.fillRect(0,75,150,75);
+
+        ctx1.moveTo(50,50);
+        ctx1.lineTo(100,100);
+        ctx1.stroke();
+
+        const c2=document.getElementById('c2');
+        const ctx2=c2.getContext('2d');
+        ctx2.fillStyle='#FF0000';
+        ctx2.beginPath();
+        ctx2.arc(70,18,15,0,Math.PI*2,true);
+        ctx2.closePath();
+        ctx2.fill();
+    </script>
+</body>
+</html>

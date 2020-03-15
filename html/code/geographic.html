@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="geo"></div>
+    <img id='geo_img'/>
+    <script>
+      const geo = document.getElementById("geo");
+
+      const showPosition = position => {
+        geo.innerHTML = `Latitude: ${position.coords.latitude} Longtitude: ${position.coords.longitude}`;
+
+        document.getElementById('geo_img').setAttribute('src',`http://maps.googleapis.com/maps/api/staticmap?center=
+${position.coords.latitude},${position.coords.longitude}&zoom=14&size=400x300&sensor=false`);
+      };
+
+      const getLocation = () => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+
+          navigator.geolocation.watchPosition(showPosition);
+        } else {
+          alert("blocked");
+          geo.innerHTML = "Geolocation is not supported by your browser.";
+        }
+      };
+
+      getLocation();
+    </script>
+  </body>
+</html>

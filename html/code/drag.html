@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .zone {
+        height: 300px;
+        width: 250px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="zone">
+      <img
+        id="drag"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="200"
+        height="250"
+        src="https://cdn.imgbin.com/8/9/3/imgbin-mask-of-tutankhamun-pharaoh-mummy-pharaonic-bLRxaXWMGP8rGcTwJuE3STbfe.jpg"
+      />
+    </div>
+
+    <div class="zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <script>
+      const drag = e => {
+        e.dataTransfer.setData("text", e.target.id);
+      };
+
+      const drop = e => {
+        e.preventDefault();
+        let data = e.dataTransfer.getData("text");
+        e.target.append(document.getElementById(data));
+      };
+
+      const allowDrop = e => {
+        e.preventDefault();
+      };
+    </script>
+  </body>
+</html>

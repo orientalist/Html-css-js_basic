@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+        }
+        [data-00]{
+            background-color: red;
+        }
+        [data-00=d2]{
+            background-color: green;
+        }   
+        [data-00|=d4]{
+            background-color: purple;
+        }
+        [data-00~=d3]{
+            background-color: blue;
+        }
+        [data-00^=x]{
+            background-color: aqua;
+        }
+        [data-00$=r]{
+            background-color: brown;
+        }
+        [data-00*=qwa]{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div data-00='d1'></div>
+    <div data-00='d2'></div>
+    <div data-00='d2 d3'></div>
+    <div data-00='d4-a d5'></div>
+    <div data-00='d4-s1'></div>
+    <div data-00='d4-a d3'></div>
+    <div data-00='x-0 a'></div>
+    <div data-00='x-yz'></div>
+    <div data-00='funk ddar'></div>
+    <div data-00='fgew funkqwaoifjh ffqq'></div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <style>
+      .header {
+        position: relative;
+        background-image: url(https://udn.com/newmedia/2020/covid-19-taiwan/img/pc.4f5e1107.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 80vh;
+      }
+      .header .info {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        bottom: 90px;
+      }
+      .header .data {
+        text-align: center;
+        padding: 0 40px 0 40px;
+      }
+      .header .data h2 {
+        font-size: 80px;
+        margin-bottom: 10px;
+      }
+      .header .data h3 {
+        font-size: 15px;
+      }
+      .header .data + :nth-child(2) {
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+      }
+      .body {
+        padding: 0px 25vw 0px 25vw;
+        font-size: 20px;
+      }
+      .body .pt1 {
+        margin-bottom: 50px;
+        z-index: 1;
+      }
+      .body .pt1.fixed {
+        width: 50vw;
+        position: fixed;
+        top: 0;
+      }
+      .body .pt1.unFixed {
+        position: absolute;
+      }
+
+      .body .pt2 {
+        z-index: 2;
+        width: 50vw;
+        position: absolute;
+      }
+      .body .pt2 .chapter {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .body .pt2 .chapter .square {
+        width: 200px;
+        height: 150px;
+        background-color: red;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="info">
+        <div class="data">
+          <h2>100</h2>
+          <h3>台灣確診數</h3>
+        </div>
+        <div class="data">
+          <h2>22</h2>
+          <h3>解除隔離</h3>
+        </div>
+        <div class="data">
+          <h2>1</h2>
+          <h3>死亡數</h3>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div id="pt1" class="pt1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quis
+        eveniet, odio sapiente aliquid impedit quia eum accusamus fugit soluta
+        debitis tempore autem, expedita quidem magnam! Illum est accusamus
+        impedit temporibus voluptatum. Dolorem blanditiis voluptates, ratione
+        debitis corporis laboriosam quidem corrupti, quam voluptate aperiam
+        perspiciatis ex iure vel quae quibusdam! Possimus nesciunt sit quaerat.
+        Debitis nemo fugit fuga pariatur maxime deserunt quam asperiores
+        dolorum, veritatis, obcaecati quibusdam a et illo, ea sit. Illo quod
+        corrupti similique eius exercitationem ipsum natus sunt omnis, dolor
+        molestias est adipisci perspiciatis? Error sequi, voluptas aut at, iusto
+        fugiat cum laborum quod maxime molestiae id voluptates. Labore nesciunt
+        possimus deserunt sunt architecto deleniti cumque, error explicabo
+        asperiores dignissimos odit laborum corrupti repellendus voluptas ipsa
+        magnam veniam tempore reiciendis? Excepturi, corporis. Magni deserunt
+        itaque inventore eligendi reiciendis nesciunt molestiae doloribus
+        nostrum sint ullam excepturi perspiciatis explicabo dolor id ipsa fugiat
+        cum cumque eaque, tempore eum commodi sed et? Suscipit sint eligendi et
+        ut perspiciatis necessitatibus laudantium minus obcaecati earum
+        voluptatem, deleniti, ratione rerum vitae autem, ipsam veniam!
+        Architecto minima expedita magnam quibusdam illo ipsa voluptas iste
+        aliquam dolorum optio accusantium corporis nisi quaerat ducimus aperiam
+        animi ipsam perspiciatis adipisci possimus provident aliquid, ratione
+        praesentium? Repudiandae, enim?
+      </div>
+      <div id="pt2" class="pt2">
+        <div class="chapter">
+          <div id="sq1" class="square"></div>
+        </div>
+        <div class="chapter">
+          <div class="square"></div>
+        </div>
+        <div class="chapter">
+          <div class="square"></div>
+        </div>
+        <div class="chapter">
+          <div class="square"></div>
+        </div>
+        <div id="last_chapter" class="chapter">
+          <div id="last_sq" class="square"></div>
+        </div>
+
+        <div id="footer" class="footer">
+          <div class="comment">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+            iste sit est voluptas ab corrupti eum atque sequi officia ut magnam
+            nam adipisci dolore facilis, obcaecati dolores amet quod quisquam
+            ullam. Quam enim quisquam voluptatem expedita eius quod, adipisci
+            molestias vel, sit alias, iure eveniet dolores! Quae voluptate
+            molestias animi pariatur itaque, rem libero repellat sit laudantium
+            natus error reiciendis delectus dolores esse deserunt neque. Nulla
+            eligendi repellendus repellat minus facere nam non fugit. Delectus
+            fugit quidem laborum! Enim vero cum incidunt suscipit non
+            laboriosam, impedit rem asperiores necessitatibus iusto consequuntur
+            ipsam alias sed culpa voluptatibus delectus deleniti aliquam
+            molestiae eaque quasi perferendis minus placeat? Repellendus
+            temporibus doloribus ea, culpa alias a adipisci necessitatibus sed
+            pariatur quas quod nam minus ratione autem voluptatum ducimus
+            maiores nihil, natus quos dolores? Officiis explicabo exercitationem
+            a quis? Quibusdam ad odio adipisci, ipsa explicabo possimus delectus
+            ducimus ut? Tempora assumenda officiis non nostrum exercitationem!
+            Optio, provident numquam sunt incidunt doloribus, placeat suscipit
+            itaque a unde, quos quam! Nam tenetur labore architecto nihil,
+            voluptatem deleniti ipsum impedit laudantium, corporis quisquam
+            expedita recusandae aliquam ut odio. Perferendis eos, fugiat ipsa
+            laboriosam, porro dignissimos perspiciatis sequi aliquam iste ut a
+            totam sunt soluta, pariatur incidunt eum! Ducimus, fugiat
+            consequuntur reprehenderit adipisci expedita omnis enim ea
+            consequatur deserunt, error corrupti quaerat consectetur
+            exercitationem quos. Ipsa, harum cum. Qui tenetur molestiae, aut
+            tempora, iusto explicabo expedita error recusandae fugit ducimus
+            suscipit a reiciendis deleniti. Impedit tempore similique facere
+            mollitia distinctio, commodi, beatae possimus voluptatum, doloribus
+            maxime rerum? Accusamus quaerat eos fugit vitae laboriosam quos
+            quisquam at labore explicabo quasi iusto, iure repudiandae neque,
+            alias porro similique facere libero. Inventore, qui maiores. Atque
+            iusto saepe quia maiores ad dicta, ullam alias, a accusantium, autem
+            provident libero expedita eveniet excepturi tempora nisi. Temporibus
+            illum, fugit expedita aliquam laudantium labore rem et facere
+            pariatur, alias aliquid sunt quidem iure at unde eum ducimus
+            mollitia qui assumenda? Incidunt veniam dolor placeat recusandae
+            explicabo, mollitia libero harum dicta quas eligendi. Et rem tempore
+            eius molestias reprehenderit nostrum adipisci animi tempora sit
+            eligendi illo voluptatum incidunt rerum, error soluta repellendus
+            suscipit quidem ullam unde. Doloribus quisquam sequi, tempora
+            reiciendis vel, sapiente quasi omnis repudiandae voluptate autem
+            atque illum repellat dolorem expedita officia impedit saepe labore
+            alias, ducimus adipisci. Praesentium repudiandae inventore nihil
+            quisquam architecto et nobis non, sint accusamus ipsam qui
+            reprehenderit quaerat? Ipsam natus rem aspernatur doloremque sit
+            voluptas sint quam, consequatur animi fuga corrupti corporis quae
+            magnam illo architecto. Asperiores, ex. Iure assumenda consequuntur,
+            aut velit ducimus nostrum, esse maiores id atque reiciendis numquam
+            tenetur modi facere nam! Nihil commodi est ipsa a quam fuga non
+            nulla soluta, asperiores aliquam nemo voluptas necessitatibus
+            dolorem odio. Soluta fuga natus ea. Vitae quisquam, ab veritatis
+            doloremque recusandae corrupti corporis! Sequi necessitatibus
+            incidunt id excepturi, quas veniam consequatur ullam officia, fugiat
+            dolore sapiente dicta blanditiis velit? Corrupti voluptatibus vero
+            culpa labore illo natus quas possimus aut facilis nostrum. Soluta
+            tenetur repellendus velit, molestiae ipsa exercitationem? Libero
+            dolorem veritatis rerum atque voluptatum impedit est molestias
+            suscipit consequatur?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let fix_p1 = true;
+      let fix_footer = true;
+      window.onload = function() {
+        const pt1 = document.getElementById("pt1");
+        const pt2 = document.getElementById("pt2");
+        const footer = document.getElementById("footer");
+        const first_square = document.getElementById("sq1");
+        const last_square = document.getElementById("last_sq");
+
+        footer.style.marginTop = `${pt1.offsetHeight -
+          (window.outerHeight - 150) / 2}px`;
+
+        window.addEventListener("scroll", function(e) {
+          if (pt1.getBoundingClientRect().top <= 0) {
+              
+            if (fix_p1) {
+              pt1.classList.add("fixed");
+              pt2.style.marginTop = `${pt1.offsetHeight}px`;
+              fix_p1 = false;
+            }
+            if (
+              first_square.getBoundingClientRect().top >=
+              window.outerHeight + 100
+            ) {
+              pt1.classList.remove("fixed");
+              pt2.style.marginTop = "0px";
+              fix_p1 = true;
+            }
+          }
+
+          if (last_square.getBoundingClientRect().top <= 0) {
+            if (fix_footer) {
+              pt1.classList.add("unFixed");
+              pt1.style.top = `${window.scrollY-1}px`;
+              fix_footer = false;
+            }
+          }
+
+          if(!fix_footer&&!fix_p1&&pt1.getBoundingClientRect().top>=0){
+              fix_p1=true;
+              fix_footer=true;
+
+              pt1.classList.remove('unFixed');
+              pt1.classList.add('fixed');
+              pt1.style.top='0px';
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

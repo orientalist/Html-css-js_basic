@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding-bottom: 100px;
+      }
+      .leftNav {
+        border: 1px solid black;
+        height: 70vh;
+        position: relative;
+      }
+      .leftNav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: absolute;
+        height: 100%;
+        overflow: scroll;
+      }
+      .leftNav li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      .leftNav li a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+      .leftNav li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+      .leftNav .content {
+        margin-left: 25%;
+        padding: 1px 16px;
+        overflow: scroll;
+      }
+
+      .topNav {
+        border: 1px solid black;
+        height: 70vh;
+      }
+
+      .topNav ul {
+        background-color: #f1f1f1;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      .topNav ul li {
+        float: left;
+      }
+      .topNav ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 16px 10px;
+      }
+      .topNav ul li a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+      .topNav ul li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+      .topNav ul li:last-of-type {
+        float: right;
+      }
+      .topNav ul::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      .topNav_fix {
+        width: 50vw;
+        height: 300px;
+        border: 1px solid black;
+        overflow: scroll;
+      }
+      .topNav_fix .banner{
+          padding: 0;
+          margin: 0;
+      }
+      .topNav_fix .banner img{
+          width: 100%;
+          height: 300px;
+      }
+      .topNav_fix ul {
+        position: sticky;
+        top: 0;
+
+        background-color: #f1f1f1;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      .topNav_fix ul li {
+        display: inline-block;
+      }
+
+      .topNav_fix ul li a {
+        display: block;
+        padding: 16px 10px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .topNav_fix ul li a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+      .topNav_fix ul li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Left side navbar(May not work properly on mobile devices)</h1>
+    <div class="leftNav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="content">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          reiciendis?
+        </h2>
+        <h3>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+          expedita.
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quaerat
+          nulla, iste officiis excepturi harum. Saepe animi voluptatum,
+          deleniti, eaque deserunt, nisi itaque fugiat quam accusantium veniam
+          porro velit. Quae, hic voluptatibus iste soluta harum cumque a libero
+          sunt voluptatem nulla explicabo possimus doloremque? Quia maxime
+          perferendis deleniti quidem qui?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+          reprehenderit ex quas quia aut maxime quidem, quibusdam porro earum
+          cumque ad a laboriosam deleniti quis temporibus beatae! Non
+          repudiandae aliquam dolores est blanditiis eos, libero ullam
+          voluptatibus quas, aut totam perferendis numquam voluptas voluptates
+          eligendi doloribus, id tempore ipsa excepturi!
+        </p>
+      </div>
+    </div>
+
+    <h1>Top side navbar(float)</h1>
+    <div class="topNav">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="content">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          reiciendis?
+        </h2>
+        <h3>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+          expedita.
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quaerat
+          nulla, iste officiis excepturi harum. Saepe animi voluptatum,
+          deleniti, eaque deserunt, nisi itaque fugiat quam accusantium veniam
+          porro velit. Quae, hic voluptatibus iste soluta harum cumque a libero
+          sunt voluptatem nulla explicabo possimus doloremque? Quia maxime
+          perferendis deleniti quidem qui?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+          reprehenderit ex quas quia aut maxime quidem, quibusdam porro earum
+          cumque ad a laboriosam deleniti quis temporibus beatae! Non
+          repudiandae aliquam dolores est blanditiis eos, libero ullam
+          voluptatibus quas, aut totam perferendis numquam voluptas voluptates
+          eligendi doloribus, id tempore ipsa excepturi!
+        </p>
+      </div>
+    </div>
+
+    <h1>Sticky navbar</h1>
+    <div class="topNav_fix">
+        <div class="banner">
+            <img src="https://mti.com/wp-content/uploads/2018/04/bg-hero-banner-02.jpg" alt="">
+        </div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="content">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+          reiciendis?
+        </h2>
+        <h3>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+          expedita.
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quaerat
+          nulla, iste officiis excepturi harum. Saepe animi voluptatum,
+          deleniti, eaque deserunt, nisi itaque fugiat quam accusantium veniam
+          porro velit. Quae, hic voluptatibus iste soluta harum cumque a libero
+          sunt voluptatem nulla explicabo possimus doloremque? Quia maxime
+          perferendis deleniti quidem qui?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+          reprehenderit ex quas quia aut maxime quidem, quibusdam porro earum
+          cumque ad a laboriosam deleniti quis temporibus beatae! Non
+          repudiandae aliquam dolores est blanditiis eos, libero ullam
+          voluptatibus quas, aut totam perferendis numquam voluptas voluptates
+          eligendi doloribus, id tempore ipsa excepturi!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+
+            position: static;
+            left: 50px;
+        }
+        .inner{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+
+            position: relative;
+            left: 100px;
+        }
+        .large{
+            height: 500px;
+            border: 1px solid black;
+            width: 500px;
+            margin: auto;
+            overflow: scroll;
+        }
+        .largeInner{
+            height: 200vh;
+        }
+        .stick{
+            border:1px solid green;
+            position: sticky;
+            top:10px;
+            width: 200px;
+            left: 10px;
+        }
+        .large2{
+            height: 100vh;
+            width: 200vw;
+            border: 1px solid black;
+
+        }
+        .stick2{
+            border:1px solid green;
+            position: sticky;
+            left: 0;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <div class="large">
+        <div class="largeInner">
+            <div class="stick">stick!</div>
+        </div>
+    </div>
+    <div class="large2">
+        <div class="stick2">stick2</div>
+    </div>
+</body>
+</html>

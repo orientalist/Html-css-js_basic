@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header, .footer{
+            background-color: gray;
+            color: white;
+            padding: 15px;
+        }
+        .column{
+            float: left;
+            padding: 15px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .menu{
+            width: 25%;
+        }
+        .content{
+            width: 75%;
+        }
+
+        .menu ul{
+            list-style-type:none ;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #33b5e5;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chania</h1>
+    </div>
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae. Id laborum culpa facilis laboriosam fugit expedita consequuntur explicabo mollitia? Hic excepturi beatae autem est assumenda laborum non adipisci repellendus nesciunt culpa accusamus maiores nemo reprehenderit porro debitis cum nulla, ut maxime? Voluptatem, illo earum. Facilis non quisquam inventore mollitia distinctio repellendus sint iure quam consectetur saepe ratione, nihil impedit fuga. Dolore maiores ea ut id placeat iure. Amet doloremque ut eligendi quasi esse iste temporibus beatae asperiores, soluta animi officiis et corporis dolor, consectetur nam nostrum odio fugit minus saepe non repellat numquam, libero quis? Architecto modi fugit tempora!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer text</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid green;
+        }
+        .pine{
+            float: right;
+            width: 200px;
+            height: 200px;
+        }
+        .clearfix{
+            clear: both;
+            display: table;
+        }
+
+        .container::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        ul{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .nav{
+            border: 1px solid blue;
+        }
+        .item{
+            float: left;
+        }
+        .nav::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="pine" src="https://cdn.shopify.com/s/files/1/0210/7666/products/IMG_5953_1024x1024.jpg?v=1359952303" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi hic dignissimos error esse veniam iusto repellendus consectetur assumenda inventore suscipit recusandae eligendi eos natus possimus, quasi voluptate, facilis voluptatem quia ipsa! Libero aliquam magni sit, eius dolor soluta odio magnam error veritatis ab necessitatibus, voluptatibus in consequatur reiciendis totam.
+        <div class="toclear"></div>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptate? Obcaecati fugiat illum culpa dicta laudantium exercitationem, commodi, hic aut cupiditate qui voluptates alias, magni inventore. Fugit quaerat consectetur quo, reiciendis hic repellendus velit explicabo sequi molestiae mollitia consequatur esse earum atque illum qui suscipit nisi id laboriosam perferendis nam quas libero. Alias voluptate hic, laborum totam repellendus a aliquam saepe similique sequi repellat soluta voluptatibus labore fugiat ullam! Quas vitae, delectus perspiciatis quis itaque vero minima quod, id tenetur expedita odio, ipsa magni beatae nulla temporibus placeat animi distinctio! Repellat tempore ducimus soluta corrupti quasi inventore amet mollitia iste.
+        <img class="pine" src="https://cdn.shopify.com/s/files/1/0210/7666/products/IMG_5953_1024x1024.jpg?v=1359952303" alt="">
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="nav">
+        <div class="item">Home</div>
+        <div class="item">News</div>
+    </div>
+</body>
+</html>

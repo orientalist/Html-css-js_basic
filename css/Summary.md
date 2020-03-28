@@ -26,3 +26,13 @@
    
 # Length value
 1. `vw`-1vw =1% of viewport width
+
+# Vertically center
+1. padding
+2. line-height
+3. position & trandform
+4. flexbox
+
+# `position:sticky`
+1. Internet Explorer, Edge 15 and earlier version do not support sticky positioning.
+2. Safari requires a `-webkit-` prefix.

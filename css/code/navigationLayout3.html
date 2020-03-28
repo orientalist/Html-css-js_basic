@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+
+            position: fixed;
+            width: 25vw;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .nav li a{
+            display: block;
+            padding: 10px 16px;
+            color: black;
+            text-decoration: none;
+        }
+        .content{
+            margin-left: 25vw;
+            padding: 10px 20px;
+        }
+
+        @media screen and (max-width: 600px){
+            .nav{
+                position: relative;
+                width: 100vw;
+                height: auto;
+                overflow-x:scroll ;
+
+                display: flex;
+                flex-direction: row;
+            }
+            .content{
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="content">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus suscipit fugit, assumenda non ipsa architecto commodi impedit minus id! Quas consectetur nam maxime explicabo nulla quae, doloribus provident repellendus laudantium perferendis aliquid harum asperiores exercitationem quo iste aperiam unde necessitatibus hic voluptatum. Veniam temporibus, deserunt maxime harum dolores iste iusto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero rerum facilis expedita ducimus voluptatum quos pariatur, eveniet delectus repellendus itaque doloremque labore suscipit non? Quasi numquam quis aperiam ratione ab eius totam esse necessitatibus pariatur beatae est, repellendus eum. Rerum id quas ex cupiditate sunt a, vero inventore in?</p>
+    </div>
+</body>
+</html>

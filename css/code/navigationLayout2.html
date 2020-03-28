@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+        .nav li{
+            float: left;
+        }
+        .nav li a{
+            display: block;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: white;
+        }
+        .nav::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        @media screen and (max-width: 600px){
+            .nav li{
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="content">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, ad.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sunt dicta molestiae neque autem nisi laborum qui error id repellat quam ab velit, doloremque sint asperiores nam nulla consequuntur dolore?</p>
+    </div>
+</body>
+</html>

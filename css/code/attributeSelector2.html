@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class|="test"]{
+            color: red;
+        }
+        [class^="top"]{
+            color: blue;
+        }
+        [class$="end"]{
+            color: green;
+        }
+        [class*=foo]{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <span class="good kfoo jlj">Hi</span>
+</body>
+</html>
